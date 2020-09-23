@@ -1,0 +1,19 @@
+
+<h1>TODO LIST</h1>
+<div *ngFor ="let tod of todo">
+  <mat-card class="mat-elevation-z8">
+    <mat-card-header>
+      <mat-card-title style=" margin-left:10%;margin-right:25%;display:block;margin-top:2%;margin-bottom:auto">{{tod.title}}
+        <!-- Id : {{tod.id}}<br>
+        Status: {{tod.status}}<br>    -->
+       </mat-card-title> 
+      <mat-content>
+      </mat-content>
+   </mat-card-header>
+    <nav>
+    <button mat-raised-button color="accent"  style=" margin-left:auto;margin-right:25%;display:block;margin-top:30%;margin-bottom:0%" [routerLink]="['/todos', tod.id]" >SHOW MORE</button>
+     </nav>
+  </mat-card>
+</div>
+
+
